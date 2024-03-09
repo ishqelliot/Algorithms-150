@@ -8,9 +8,8 @@ public class LongestConsecutive {
         Arrays.stream(nums).forEach(numsHash::add);
         int maxSequence = 1;
         for(int numHash : numsHash){
-            int localSequence = maxSequence;
-            if(numsHash.contains(numHash-1)){
-                localSequence++;
+            if(!numsHash.contains(numHash-1)){
+                int localSequence = 1;
                 int next = numHash+1;
                 while (numsHash.contains(next)){
                     next++;
