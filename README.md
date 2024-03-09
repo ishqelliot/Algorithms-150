@@ -20,4 +20,4 @@ Notes -
   * Synchronization - By being immutable strings inherently are thread safe
 ### Two Pointers
 * [Valid Palindrome](./ValidPalindrome.java) - - iterate simultaneously from start and end of string and compare each character.
-* 
+* [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
