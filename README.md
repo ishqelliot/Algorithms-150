@@ -21,3 +21,6 @@ Notes -
 ### Two Pointers
 * [Valid Palindrome](./ValidPalindrome.java) - - iterate simultaneously from start and end of string and compare each character.
 * [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
+
+### Stacks
+* [Valid Parentheses](./ValidParentheses.java) - use single stack to insert one of the type of parentheses and pop whenever pair is found while iterting over string
