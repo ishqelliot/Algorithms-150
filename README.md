@@ -23,4 +23,5 @@ Notes -
 * [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
 
 ### Stacks
-* [Valid Parentheses](./ValidParentheses.java) - use single stack to insert one of the type of parentheses and pop whenever pair is found while iterting over string
+* [Valid Parentheses](./ValidParentheses.java) - use single stack to insert one of the type of parentheses and pop whenever pair is found while iterating over string
+* [Min Stack](./MinStack.java) - every node will contain minimum until current node - while add compare if same global min is to be used or should update local node min and global min, while pop if required update global min with the latest current min on top.

@@ -2,8 +2,11 @@ import java.util.Arrays;
 
 public class Algorithms {
     public static void main(String[] args) {
-        ValidParentheses obj = new ValidParentheses();
-        boolean res = obj.execute("()");
-        System.out.println(res);
+        MinStack obj = new MinStack();
+        obj.push(-2);
+        obj.push(0);
+        obj.push(-3);
+        System.out.println(obj.getMin());
+//        System.out.println(res);
     }
 }
