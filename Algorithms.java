@@ -2,11 +2,8 @@ import java.util.Arrays;
 
 public class Algorithms {
     public static void main(String[] args) {
-        MinStack obj = new MinStack();
-        obj.push(-2);
-        obj.push(0);
-        obj.push(-3);
-        System.out.println(obj.getMin());
+        EvaluateReversePolishNotation obj = new EvaluateReversePolishNotation();
+        System.out.println(obj.execute(new String[]{"10","6","9","3","+","-11","*","/","*","17","+","5","+"}));
 //        System.out.println(res);
     }
 }

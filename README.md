@@ -21,7 +21,19 @@ Notes -
 ### Two Pointers
 * [Valid Palindrome](./ValidPalindrome.java) - - iterate simultaneously from start and end of string and compare each character.
 * [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
+* [Three Sum](./ThreeSum.java) - divide problem into one number and a pair of number, solve pair as two sum problem.
+* [Container with most water](./ContainerWithMostWater.java) - a pointer on first and last index, calculate water capacity and update max variable accordingly. Increment or decrement index of lower height index
 
 ### Stacks
 * [Valid Parentheses](./ValidParentheses.java) - use single stack to insert one of the type of parentheses and pop whenever pair is found while iterating over string
 * [Min Stack](./MinStack.java) - every node will contain minimum until current node - while add compare if same global min is to be used or should update local node min and global min, while pop if required update global min with the latest current min on top.
+* [Evaluate Reverse Polish Notation](./EvaluateReversePolishNotation.java) - iterate and push operands into the stack and whenever operator identified, pop first two operands and use operator on those and push result back in stack. Post complete iteration result will be on the top of stack.
+Notes -
+* Stateful intermediate operation - 
+  * Stateful operations are those whose result is dependent on state that might change during the execution.
+  * Stateless operations are not dependent on any state.
+  * Intermediate operation maintain state internally, in Java 8 stream api distinct, skip, sorted, limit are intermediate operation and all others are stateless.
+  * Accessing external state from behavioral parameter can lead to non-deterministic result thus use safe and deterministic intermediate operations.
+* == vs equals
+  * == compares reference and equals compare value.
+  * use == for primitives
