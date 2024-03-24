@@ -23,7 +23,7 @@ Notes -
 * [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
 * [Three Sum](./ThreeSum.java) - divide problem into one number and a pair of number, solve pair as two sum problem.
 * [Container with most water](./ContainerWithMostWater.java) - a pointer on first and last index, calculate water capacity and update max variable accordingly. Increment or decrement index of lower height index
-* [Trapping rain water](./TrappingRainWater.java) - $${\color{green}beauty}$$beauty - solve at granular -> for a single element, how much it can hold is dependent on its support from left and right. Start index from first and last, maintain max left height and max right height. Minimum of both heights minus height of element is water stored at that element.
+* [Trapping rain water](./TrappingRainWater.java) - ${\color{green}beauty}$ - solve at granular -> for a single element, how much it can hold is dependent on its support from left and right. Start index from first and last, maintain max left height and max right height. Minimum of both heights minus height of element is water stored at that element.
   
   Two pointers are basically comparing most extreme heights ensuring minimum of both will have support of other that's why moving pointer of less one ahead, once pointer is moved we compare if new current height replaces max height if it does then there's simply no need to calculate its overhead water because there's no one to contain them from where they came.
 
