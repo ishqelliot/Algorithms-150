@@ -23,11 +23,19 @@ Notes -
 * [Two Sum II](./TwoSumII.java) - simpler variant of actual two sum.
 * [Three Sum](./ThreeSum.java) - divide problem into one number and a pair of number, solve pair as two sum problem.
 * [Container with most water](./ContainerWithMostWater.java) - a pointer on first and last index, calculate water capacity and update max variable accordingly. Increment or decrement index of lower height index
+* [Trapping rain water](./TrappingRainWater.java) - $${\color{green}beauty}$$beauty - solve at granular -> for a single element, how much it can hold is dependent on its support from left and right. Start index from first and last, maintain max left height and max right height. Minimum of both heights minus height of element is water stored at that element.
+  
+  Two pointers are basically comparing most extreme heights ensuring minimum of both will have support of other that's why moving pointer of less one ahead, once pointer is moved we compare if new current height replaces max height if it does then there's simply no need to calculate its overhead water because there's no one to contain them from where they came.
 
 ### Stacks
 * [Valid Parentheses](./ValidParentheses.java) - use single stack to insert one of the type of parentheses and pop whenever pair is found while iterating over string
 * [Min Stack](./MinStack.java) - every node will contain minimum until current node - while add compare if same global min is to be used or should update local node min and global min, while pop if required update global min with the latest current min on top.
 * [Evaluate Reverse Polish Notation](./EvaluateReversePolishNotation.java) - iterate and push operands into the stack and whenever operator identified, pop first two operands and use operator on those and push result back in stack. Post complete iteration result will be on the top of stack.
+* [Generate Parentheses](./GenerateParentheses.java) - whenever there's permutation and combinations in question go with recursion - call recursion to fill open brackets while it is less than given n and call recursion to fill close brackets while it is less than left (because close should only come after open)
+* [Daily Temperatures](./DailyTemperatures.java) - monotonic stack
+* [Car Fleet](./CarFleet.java) - 
+* [Largest Rectangle in Histogram](./LargestRectangleInHistogram.java) - 
+
 Notes -
 * Stateful intermediate operation - 
   * Stateful operations are those whose result is dependent on state that might change during the execution.
