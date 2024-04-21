@@ -45,3 +45,16 @@ Notes -
 * == vs equals
   * == compares reference and equals compare value.
   * use == for primitives
+* Volatile 
+  * indicates variable stored in main memory and not cpu cache
+  * used in cases of multithreading where all threads want latest state of variable
+  * using volatile with synchronised is anti-pattern
+* Transient - Such fields are disregarded during time of serialization and on deserialization they're initialised with default value. Do not use with final.
+
+### Binary Search 
+* [Search a 2d matrix](./Search2DMatrix.java) - from the starting indices of rows decide which row will have the searched value.
+* [Koko Eating Bananas](./KokoEatingBananas.java) - speed of eating can be from value 1 till the max pile, so do binary search from 1 to max pile checking if mid is correct speed or not.
+* [Find Minimum in rotated sorted array](./MinimumInRotatedSortedArray.java) -
+### Linked List
+* [Reorder List](./ReorderList.java) - find mid using slow fast pointers, reverse list from mid, reorder using two heads. (Caveat:reversing from mid will only change direction from mid and node before mid still points to mid)
+* 
